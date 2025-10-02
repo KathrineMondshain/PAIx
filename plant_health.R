@@ -1,0 +1,5 @@
+plant_health <- read.csv(file.choose(),header=T)
+attach(plant_health)
+pyrazine<-as.factor(pyrazine)
+plot(health~pyrazine)
+t.test(health~pyrazine)
